@@ -31,6 +31,7 @@ public class FindLargestInArray
         // Set loop variable.
         index = 1;
         
+        // While loop used to find the largest index within the array.
         while (index < array.length)
         {
             if(array[index] > currentMax)
@@ -41,15 +42,20 @@ public class FindLargestInArray
             index++;
         }
         
+        // Return max integer in array.
         return currentMax;
             
     }
     
     public static void main(String[] args)
     {
-        NewClass nc = new NewClass();
+        FindLargestInArray nc = new FindLargestInArray();
         
         int[] arr = {3, 6, -1, 10, 15, -8};
+        
+        int max = nc.findMax(arr);
+        
+        System.out.println("The max integer in the array is: " + max);
         
         
      
